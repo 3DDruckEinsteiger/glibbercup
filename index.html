@@ -3,62 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Glibber Cup: Beach Volleyball · Support, Datenschutz, Impressum</title>
-<meta name="robots" content="index,follow">
+<title>Glibber Cup ist umgezogen: www.glibbercup.com</title>
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://www.glibbercup.com/">
+<script>
+/* Weiterleitung auf die eigene Seite (GitHub Pages kann keine Server-Weiterleitung).
+   Alte Anker: #support, #datenschutz, #impressum. Sprache aus ?lang= oder der Browsersprache. */
+(function () {
+  var B = "https://www.glibbercup.com/", L = ["en", "de", "es", "fr", "it", "pt", "nl", "pl", "tr", "ja", "ko", "zh"];
+  var l = (location.search.match(/[?&]lang=([a-z]{2})/) || [])[1] || "";
+  if (L.indexOf(l) < 0) {
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "de"];
+    l = "en";
+    for (var i = 0; i < list.length; i++) { var c = String(list[i]).slice(0, 2).toLowerCase(); if (L.indexOf(c) >= 0) { l = c; break; } }
+  }
+  var q = l === "en" ? "" : "?lang=" + l, h = location.hash.toLowerCase(), ziel = B + q;
+  if (h.indexOf("#datenschutz") === 0 || h.indexOf("#privacy") === 0) ziel = B + "datenschutz.html" + q;
+  else if (h.indexOf("#impressum") === 0) ziel = B + "impressum.html" + q;
+  else if (h.indexOf("#support") === 0) ziel = B + q + "#support";
+  location.replace(ziel);
+})();
+</script>
+<meta http-equiv="refresh" content="2; url=https://www.glibbercup.com/">
 <style>
-  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; color: #12303a; background: #f3fbfb; }
-  header { background: linear-gradient(135deg, #2ec4c4, #ff7a6b); color: #fff; padding: 36px 20px; text-align: center; }
-  header h1 { margin: 0; font-size: 30px; }
-  header p { margin: 6px 0 0; opacity: .9; }
-  main { max-width: 760px; margin: 0 auto; padding: 8px 20px 48px; }
-  nav { text-align: center; margin: 18px 0; }
-  nav a { margin: 0 10px; color: #0e7c86; font-weight: 600; }
-  h2 { margin-top: 36px; border-bottom: 2px solid #2ec4c4; padding-bottom: 4px; }
-  h3 { margin-bottom: 4px; }
-  .en { color: #3c5a63; }
-  footer { text-align: center; font-size: 14px; color: #6b8a92; padding: 20px; }
+  body { font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; color: #fff; background: #1c1742; text-align: center; padding: 64px 20px; }
+  a { color: #facc15; font-weight: 700; }
 </style>
 </head>
 <body>
-<header>
-  <h1>Glibber Cup: Beach Volleyball</h1>
-  <p>Beachvolleyball mit Wackelpudding-Figuren · Jelly beach volleyball</p>
-</header>
-<main>
-<nav><a href="#support">Support</a><a href="#datenschutz">Datenschutz / Privacy</a><a href="#impressum">Impressum</a></nav>
-
-<h2 id="support">Support</h2>
-<p>Fragen, Fehler oder Wünsche? Schreib uns: <a href="mailto:kontakt@axelmammitzsch.com?subject=Glibber%20Cup">kontakt@axelmammitzsch.com</a>. Wir antworten in der Regel innerhalb weniger Tage.</p>
-<h3>Häufige Fragen</h3>
-<p><b>Ich habe „Alle Welten“ gekauft, sie sind aber gesperrt.</b> Im Spiel unter Einstellungen „Käufe wiederherstellen“ wählen. Der Kauf gilt für alle Geräte mit derselben Apple-ID bzw. demselben Google-Konto.</p>
-<p><b>Wie spiele ich zu zweit?</b> Am selben Gerät: Touch-Tasten links und rechts, Tastatur (A/D/W und Pfeiltasten) oder zwei Controller.</p>
-<p class="en"><b>English:</b> Questions or problems? Email <a href="mailto:kontakt@axelmammitzsch.com?subject=Glibber%20Cup">kontakt@axelmammitzsch.com</a>. Bought “All worlds” but they are locked? Open Settings in the game and tap “Restore purchases”.</p>
-
-<h2 id="datenschutz">Datenschutzerklärung</h2>
-<p><i>Stand: 4. November 2026</i></p>
-<h3>Verantwortlicher</h3>
-<p>Axel Mammitzsch Einzelunternehmen, Pirnaer Landstr. 197, 01257 Dresden, Deutschland · <a href="mailto:kontakt@axelmammitzsch.com">kontakt@axelmammitzsch.com</a></p>
-<h3>Welche Daten das Spiel verarbeitet</h3>
-<p>Glibber Cup erhebt <b>keine personenbezogenen Daten</b>. Es gibt kein Benutzerkonto, keine Werbung, keine Analyse- oder Tracking-Dienste und keine Übertragung an eigene Server. Einstellungen (Sprache, Lautstärke, Schwierigkeit), die Freischaltung und die genutzten Probespiele werden nur lokal auf deinem Gerät gespeichert und beim Löschen der App entfernt.</p>
-<h3>Käufe</h3>
-<p>Der optionale Kauf „Alle Welten“ wird vollständig über den App Store (Apple) bzw. Google Play abgewickelt. Zahlungs- und Kontodaten verarbeiten ausschließlich Apple bzw. Google nach ihren eigenen Datenschutzerklärungen; wir erhalten davon keine personenbezogenen Daten.</p>
-<h3>Controller</h3>
-<p>Angeschlossene Gamecontroller werden nur auf dem Gerät für die Steuerung ausgelesen. Es wird nichts gespeichert oder übertragen.</p>
-<h3>Support-Anfragen</h3>
-<p>Wenn du uns per E-Mail schreibst, verwenden wir deine Adresse und Nachricht nur, um die Anfrage zu beantworten (Art. 6 Abs. 1 lit. b und f DSGVO), und löschen sie, wenn sie nicht mehr benötigt werden.</p>
-<h3>Deine Rechte</h3>
-<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde, z. B. der Sächsischen Datenschutz- und Transparenzbeauftragten.</p>
-<h3>Kinder</h3>
-<p>Das Spiel ist für alle Altersgruppen geeignet und sammelt auch von Kindern keine Daten.</p>
-<h3 class="en">Privacy policy (English)</h3>
-<p class="en">Glibber Cup does not collect any personal data. There are no accounts, no ads, no analytics or tracking, and no transfer to our own servers. Settings, the unlock and used trial matches are stored only on your device. The optional “All worlds” purchase is handled entirely by Apple’s App Store or Google Play; we receive no personal data from it. Controllers are read on the device only. If you email us, we use your address only to answer you. Controller: Axel Mammitzsch, Pirnaer Landstr. 197, 01257 Dresden, Germany, kontakt@axelmammitzsch.com.</p>
-
-<h2 id="impressum">Impressum</h2>
-<p>Axel Mammitzsch Einzelunternehmen<br>Pirnaer Landstr. 197<br>01257 Dresden<br>Deutschland</p>
-<p>E-Mail: <a href="mailto:kontakt@axelmammitzsch.com">kontakt@axelmammitzsch.com</a><br>Telefon: +49 351 89675725<br>USt-IdNr.: DE298085931</p>
-<p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Axel Mammitzsch, Anschrift wie oben.</p>
-<p>Hinweis: Alle Namen, Sponsoren und Marken im Spiel sind frei erfunden. Stimmen und Musik sind KI-generiert.</p>
-</main>
-<footer>© 2026 Axel Mammitzsch · Glibber Cup</footer>
+<h1>Glibber Cup</h1>
+<p>Die Seite ist umgezogen auf <a href="https://www.glibbercup.com/">www.glibbercup.com</a>.</p>
+<p>This page has moved to <a href="https://www.glibbercup.com/">www.glibbercup.com</a>.</p>
+<p><a href="https://www.glibbercup.com/#support">Support</a> · <a href="https://www.glibbercup.com/datenschutz.html">Datenschutz / Privacy</a> · <a href="https://www.glibbercup.com/impressum.html">Impressum</a></p>
 </body>
 </html>
